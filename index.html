@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Street General Maintenance & Cleaning Services LLC</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Config (must come after the Tailwind CDN) -->
+    <script src="js/tailwind-config.js"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <div class="bg-[#2196f3] text-white text-xs sm:text-sm py-2 px-4 shadow-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <a href="tel:+8801580403769" class="flex items-center gap-2 hover:opacity-80 transition font-medium">
+                    <i class="fa-solid fa-phone text-white"></i> +8801580403769
+                </a>
+                <a href="mailto:info@bsfm.ae" class="flex items-center gap-2 hover:opacity-80 transition font-medium">
+                    <i class="fa-solid fa-envelope text-white"></i> info@bsfm.ae
+                </a>
+            </div>
+            <div class="flex items-center gap-3 text-xs opacity-90">
+                <span>Bangladesh</span>
+                <span>|</span>
+                <span>Licensed & Certified</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2">
+                <div class="flex flex-col">
+                    <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 flex items-center">
+                        BRIGHT<span class="text-amber-500 ml-1">STREET</span>
+                        <i class="fa-solid fa-star text-amber-500 text-sm ml-1 -translate-y-2"></i>
+                    </span>
+                    <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-slate-500 font-semibold">General Maintenance & Cleaning Services LLC</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-slate-700">
+                <a href="#" class="text-emerald-600 font-semibold hover:text-emerald-700 transition">Home</a>
+                <div class="relative group py-2">
+                    <button class="flex items-center gap-1 hover:text-cyan-600 transition">
+                        Cleaning <i class="fa-solid fa-chevron-down text-xs opacity-70"></i>
+                    </button>
+                    <div class="absolute top-full left-0 w-56 bg-white shadow-xl rounded-xl py-2 hidden group-hover:block border border-slate-100 animate-in fade-in slide-in-from-top-2 duration-200">
+                        <a href="#services" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-cyan-600">Deep Cleaning Services</a>
+                        <a href="#services" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-cyan-600">Home Cleaning Services</a>
+                        <a href="#services" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-cyan-600">Sofa & Carpet Cleaning</a>
+                    </div>
+                </div>
+                <div class="relative group py-2">
+                    <button class="flex items-center gap-1 hover:text-cyan-600 transition">
+                        Pest Control <i class="fa-solid fa-chevron-down text-xs opacity-70"></i>
+                    </button>
+                    <div class="absolute top-full left-0 w-52 bg-white shadow-xl rounded-xl py-2 hidden group-hover:block border border-slate-100">
+                        <a href="#services" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-cyan-600">Residential Pest Control</a>
+                        <a href="#services" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-cyan-600">Commercial Pest Control</a>
+                    </div>
+                </div>
+                <div class="relative group py-2">
+                    <button class="flex items-center gap-1 hover:text-cyan-600 transition">
+                        Maintenance <i class="fa-solid fa-chevron-down text-xs opacity-70"></i>
+                    </button>
+                    <div class="absolute top-full left-0 w-52 bg-white shadow-xl rounded-xl py-2 hidden group-hover:block border border-slate-100">
+                        <a href="#services" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-cyan-600">Handyman Services</a>
+                        <a href="#services" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-cyan-600">AC & Electrical</a>
+                    </div>
+                </div>
+                <div class="relative group py-2">
+                    <button class="flex items-center gap-1 hover:text-cyan-600 transition">
+                        Painting Services <i class="fa-solid fa-chevron-down text-xs opacity-70"></i>
+                    </button>
+                    <div class="absolute top-full left-0 w-52 bg-white shadow-xl rounded-xl py-2 hidden group-hover:block border border-slate-100">
+                        <a href="#services" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-cyan-600">Interior Painting</a>
+                        <a href="#services" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-cyan-600">Exterior Painting</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menu-btn" class="lg:hidden text-slate-700 focus:outline-none p-2 rounded-lg hover:bg-slate-100">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 shadow-lg">
+            <a href="#" class="block text-emerald-600 font-semibold py-1">Home</a>
+            <a href="#services" class="block text-slate-700 font-medium py-1 hover:text-cyan-600">Cleaning Services</a>
+            <a href="#services" class="block text-slate-700 font-medium py-1 hover:text-cyan-600">Pest Control</a>
+            <a href="#services" class="block text-slate-700 font-medium py-1 hover:text-cyan-600">Maintenance</a>
+            <a href="#services" class="block text-slate-700 font-medium py-1 hover:text-cyan-600">Painting Services</a>
+            <div class="pt-2 border-t border-slate-100 flex gap-4">
+                <a href="tel:+8801580403769" class="flex-1 bg-cyan-500 text-white text-center py-2 rounded-lg font-medium text-sm shadow">Call Now</a>
+                <a href="https://wa.me/8801580403769" target="_blank" class="flex-1 bg-emerald-500 text-white text-center py-2 rounded-lg font-medium text-sm shadow">WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        </header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center py-24 px-4 overflow-hidden" style="background-image: linear-gradient(to right, rgba(255,255,255,0.92), rgba(255,255,255,0.75)), url('images/hero-bg.jpg.avif');">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+            <!-- Left Side: Unique & Fresh Content -->
+            <div class="z-10">
+                <span class="inline-block bg-[#26a6ff]/10 text-[#26a6ff] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+                    Expert Cleaning & Maintenance
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-6 text-gray-900">
+                    Premium Home & Office Care Solutions in Bangladesh
+                </h1>
+                <p class="text-gray-600 mb-8 leading-relaxed text-sm sm:text-base">
+                    BRIGHT STREET GENERAL MAINTENANCE AND CLEANING SERVICES – L.L.C brings top-tier hygiene, expert pest control, and reliable property upkeep right to your doorstep. Experience absolute cleanliness with our certified and professional team.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/971542179361" target="_blank" class="inline-flex items-center gap-2 bg-[#26a6ff] hover:bg-[#1f8ce6] text-white px-7 py-3 rounded-full font-semibold shadow-lg transition transform hover:-translate-y-0.5">
+                        Book via WhatsApp <i class="fa-brands fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Professional Cleaning Image (Local) -->
+            <div class="flex justify-center z-10">
+                <div class="relative bg-white/80 backdrop-blur-sm p-6 rounded-full shadow-2xl border-4 border-white">
+                    <img src="images/cleaner.png" alt="Cleaning Professional" class="max-h-96 object-contain transform hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 px-4 bg-white" id="services-section">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+                    Our Most Popular Cleaning Maintenance Services
+                </h2>
+                <div class="w-24 h-1 bg-[#26a6ff] mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Services Grid (8 Services in 2 Rows or Responsive Layout) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Service 1: Home Cleaning -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center text-center">
+                    <div class="h-32 flex items-center justify-center mb-4">
+                        <img src="images/home-cleaning.png" alt="Home Cleaning" class="max-h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Home Cleaning</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Professional home cleaning in Bangladesh for apartments and villas, ensuring spotless rooms, fresh surfaces, and a healthy living environment.
+                    </p>
+                </div>
+
+                <!-- Service 2: DEEP Cleaning -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center text-center">
+                    <div class="h-32 flex items-center justify-center mb-4">
+                        <img src="images/deep-cleaning.png" alt="DEEP Cleaning" class="max-h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">DEEP Cleaning</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Complete deep cleaning service in Bangladesh targeting hidden dirt, grease, and bacteria in kitchens, bathrooms, and living spaces for long-lasting hygiene.
+                    </p>
+                </div>
+
+                <!-- Service 3: Sofa Cleaning -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center text-center">
+                    <div class="h-32 flex items-center justify-center mb-4">
+                        <img src="images/sofa-cleaning.png" alt="Sofa Cleaning" class="max-h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Sofa Cleaning</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Expert sofa and upholstery cleaning in Bangladesh that removes stains, odors, and dust, restoring freshness and extending the life of your furniture.
+                    </p>
+                </div>
+
+                <!-- Service 4: PEST Control -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center text-center">
+                    <div class="h-32 flex items-center justify-center mb-4">
+                        <img src="images/pest-control.png" alt="PEST Control" class="max-h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">PEST Control</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Safe and effective pest control in Bangladesh to eliminate cockroaches, rodents, bed bugs, ant and insects using eco-friendly treatment methods.
+                    </p>
+                </div>
+
+                <!-- Service 5: AC Maintenance -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center text-center">
+                    <div class="h-32 flex items-center justify-center mb-4">
+                        <img src="images/ac-maintenance.png" alt="AC Maintenance" class="max-h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">AC Maintenance</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Professional AC maintenance in Bangladesh ensures efficient cooling, clean air circulation, and reduced energy costs for homes and offices.
+                    </p>
+                </div>
+
+                <!-- Service 6: Electrical Services -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center text-center">
+                    <div class="h-32 flex items-center justify-center mb-4">
+                        <img src="images/electrical-services.png" alt="Electrical Services" class="max-h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electrical Services</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Reliable electrical services in Bangladesh including wiring, lighting, repairs, and safety inspections for residential and commercial properties.
+                    </p>
+                </div>
+
+                <!-- Service 7: Office Cleaning -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center text-center">
+                    <div class="h-32 flex items-center justify-center mb-4">
+                        <img src="images/office-cleaning.png" alt="Office Cleaning" class="max-h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Office Cleaning</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Professional office cleaning in Bangladesh ensures spotless workspaces, sanitized surfaces, and a clean, productive environment for your team.
+                    </p>
+                </div>
+
+                <!-- Service 8: Painting Services -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center text-center">
+                    <div class="h-32 flex items-center justify-center mb-4">
+                        <img src="images/painting-services.png" alt="Painting Services" class="max-h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Painting Services</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Professional apartment, villa, and office painting services delivering smooth finishes, durable coatings, premium materials, and long-lasting color protection.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Cleaning Section -->
+    <section class="py-20 px-4 bg-slate-50">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+            <!-- Left Side: Image Illustration -->
+            <div class="flex justify-center">
+                <div class="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 max-w-md w-full">
+                    <img src="images/comprehensive-cleaning.png" alt="Comprehensive Cleaning Services" class="w-full h-auto object-contain">
+                </div>
+            </div>
+
+            <!-- Right Side: Modified Content -->
+            <div class="space-y-6">
+                <span class="inline-block bg-[#26a6ff]/10 text-[#26a6ff] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Expert Quality
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
+                    Advanced Cleaning & Property Care Solutions in Bangladesh
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                    Bright Street General Maintenance and Cleaning Services LLC provides exceptional cleaning and facility upkeep tailored for modern homes and corporate offices. Our certified team guarantees a pristine, healthy, and refreshing environment whether you live in luxury apartments, spacious villas, or commercial properties across Bangladesh.
+                </p>
+
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-start gap-3">
+                        <div class="bg-[#26a6ff]/10 text-[#26a6ff] p-2 rounded-lg mt-1">
+                            <i class="fa-solid fa-check text-xs"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-sm">Perfect For:</h4>
+                            <p class="text-gray-600 text-xs sm:text-sm">Busy families, professional offices, post-renovation detailing, and seasonal deep cleaning.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <div class="bg-[#26a6ff]/10 text-[#26a6ff] p-2 rounded-lg mt-1">
+                            <i class="fa-solid fa-check text-xs"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-sm">Our Focus:</h4>
+                            <p class="text-gray-600 text-xs sm:text-sm">Thorough sanitization of every corner, including carpets, upholstery, fixtures, and hidden spaces.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-200">
+                    <p class="text-xs sm:text-sm font-semibold text-gray-700 italic">
+                        "Your absolute satisfaction and comfort are our top priorities."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pest Control Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+            <!-- Left Side: Styled Content & Treatments -->
+            <div class="space-y-6">
+                <span class="inline-block bg-[#26a6ff]/10 text-[#26a6ff] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Certified Safety
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
+                    Advanced Pest Control Solutions Across Bangladesh’s Neighbourhoods
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                    Protect your home and workplace with our reliable, eco-friendly pest management services in Bangladesh. We provide targeted treatments across Al Danah, Khalifa City, Mohammed Bin Zayed City, Al Raha Beach, and Mussafah, ensuring complete family and pet safety.
+                </p>
+
+                <!-- What We Treat Box -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-[#26a6ff]"></i> Common Pests We Eradicate:
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div class="flex items-center gap-2 text-sm text-gray-700 bg-white p-2.5 rounded-xl border border-slate-100 shadow-xs">
+                            <i class="fa-solid fa-check text-[#26a6ff] text-xs"></i> Cockroaches & Ants
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-700 bg-white p-2.5 rounded-xl border border-slate-100 shadow-xs">
+                            <i class="fa-solid fa-check text-[#26a6ff] text-xs"></i> Rodents & Mice
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-700 bg-white p-2.5 rounded-xl border border-slate-100 shadow-xs">
+                            <i class="fa-solid fa-check text-[#26a6ff] text-xs"></i> Bed Bugs & Fleas
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-700 bg-white p-2.5 rounded-xl border border-slate-100 shadow-xs">
+                            <i class="fa-solid fa-check text-[#26a6ff] text-xs"></i> Termites & Wood Borers
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Button -->
+                <div>
+                    <a href="https://wa.me/971542179361" target="_blank" class="inline-flex items-center gap-2 bg-[#26a6ff] hover:bg-[#1f8ce6] text-white px-7 py-3 rounded-full font-semibold shadow-lg transition transform hover:-translate-y-0.5 text-sm">
+                        Book Pest Control <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Pest Control Image Illustration -->
+            <div class="flex justify-center">
+                <div class="bg-slate-50 p-6 rounded-3xl shadow-xl border border-slate-100 max-w-md w-full flex items-center justify-center">
+                    <img src="images/pest-control bangladesh.png" alt="Pest Control Solutions" class="w-full h-auto object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facility Maintenance & Repairs Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+            
+            <!-- Left Side: Maintenance Illustration Image -->
+            <div class="flex justify-center">
+                <div class="bg-slate-50 p-6 rounded-3xl shadow-xl border border-slate-100 max-w-md w-full flex items-center justify-center">
+                    <img src="images/facility-maintenance.png" alt="Facility Maintenance and Repairs" class="w-full h-auto object-contain">
+                </div>
+            </div>
+
+            <!-- Right Side: Content & Services Covered -->
+            <div class="space-y-6">
+                <span class="inline-block bg-[#26a6ff]/10 text-[#26a6ff] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Expert Technical Support
+                </span>
+                
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
+                    Comprehensive Facility Maintenance & Repairs in Bangladesh
+                </h2>
+                
+                <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                    Keep your property in excellent condition with our professional facility maintenance and repair services in Bangladesh. Our skilled technicians provide reliable support across Dhaka, Chittagong, Khulna, and nearby areas.
+                </p>
+
+                <!-- What We Cover Box -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 shadow-sm space-y-4">
+                    <h3 class="text-base font-bold text-gray-900 flex items-center gap-2">
+                        <i class="fa-solid fa-screwdriver-wrench text-[#26a6ff]"></i> What We Cover:
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div class="flex items-center gap-2.5 text-xs sm:text-sm text-gray-700 bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
+                            <i class="fa-solid fa-check text-[#26a6ff] text-xs"></i> AC servicing & duct cleaning
+                        </div>
+                        <div class="flex items-center gap-2.5 text-xs sm:text-sm text-gray-700 bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
+                            <i class="fa-solid fa-check text-[#26a6ff] text-xs"></i> Electrical wiring & repair work
+                        </div>
+                        <div class="flex items-center gap-2.5 text-xs sm:text-sm text-gray-700 bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
+                            <i class="fa-solid fa-check text-[#26a6ff] text-xs"></i> Plumbing leak repair & fittings
+                        </div>
+                        <div class="flex items-center gap-2.5 text-xs sm:text-sm text-gray-700 bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
+                            <i class="fa-solid fa-check text-[#26a6ff] text-xs"></i> Handyman & minor repair tasks
+                        </div>
+                        <div class="col-span-1 sm:col-span-2 flex items-center gap-2.5 text-xs sm:text-sm text-gray-700 bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
+                            <i class="fa-solid fa-check text-[#26a6ff] text-xs"></i> Interior and exterior painting services
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compliance & Footer Info -->
+                <p class="text-xs sm:text-sm text-gray-500 italic">
+                    All work complies with Bangladesh regulations and building standards. Our technicians are fully licensed, trained, and insured.
+                </p>
+
+                <!-- Action Button -->
+                <div>
+                    <a href="https://wa.me/971542179361" target="_blank" class="inline-flex items-center gap-2 bg-[#26a6ff] hover:bg-[#1f8ce6] text-white px-7 py-3 rounded-full font-semibold shadow-lg transition transform hover:-translate-y-0.5 text-sm">
+                        Book Maintenance Service <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-cyan-950 text-white py-20 lg:py-28 overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <span class="inline-flex items-center gap-2 bg-cyan-500/20 text-cyan-300 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase border border-cyan-500/30">
+                            <i class="fa-solid fa-shield-halved"></i> Bangladesh ,Dhaka  Trusted Service Provider
+                        </span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                            Professional Care For Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-amber-400">Home & Office</span>
+                        </h1>
+                        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                            BRIGHT STREET GENERAL MAINTENANCE AND CLEANING SERVICES – L.L.C is your trusted partner for all cleaning, maintenance, handyman, and pest control needs across Bangladesh.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <a href="tel:+8801712345678" class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-cyan-500/30 transition flex items-center gap-3">
+                                <i class="fa-solid fa-phone"></i> Book Service Now
+                            </a>
+                            <a href="https://wa.me/8801712345678" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-emerald-600/30 transition flex items-center gap-3">
+                                <i class="fa-brands fa-whatsapp text-xl"></i> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative flex justify-center">
+                        <div class="w-full max-w-md bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-3xl shadow-2xl space-y-6">
+                            <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                                <h3 class="text-xl font-bold text-white">Quick Booking Enquiry</h3>
+                                <span class="bg-emerald-500 text-white text-xs px-2.5 py-1 rounded-full font-semibold animate-pulse">Open 24/7</span>
+                            </div>
+                           <form id="bookingForm" class="space-y-4">
+    <div>
+        <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Your Name</label>
+        <input type="text" name="name" required placeholder="Enter full name" class="w-full px-4 py-3 rounded-xl bg-slate-900/50 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+    </div>
+    <div>
+        <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Phone Number</label>
+        <input type="tel" name="phone" required
+               placeholder="+880 1XXX XXXXXX"
+               pattern="^(\+8801|8801|01)[3-9][0-9]{8}$"
+               title="Valid BD number din (e.g. +8801712345678 ba 01712345678)"
+               class="w-full px-4 py-3 rounded-xl bg-slate-900/50 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+    </div>
+    <div>
+        <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Select Service</label>
+        <select name="service" class="w-full px-4 py-3 rounded-xl bg-slate-900/50 border border-slate-700 text-white focus:outline-none focus:border-cyan-400">
+            <option class="bg-slate-900">Deep Cleaning Services</option>
+            <option class="bg-slate-900">Home Cleaning Services</option>
+            <option class="bg-slate-900">Sofa & Carpet Cleaning</option>
+            <option class="bg-slate-900">Pest Control Services</option>
+            <option class="bg-slate-900">General Maintenance / Handyman</option>
+            <option class="bg-slate-900">Interior & Exterior Painting</option>
+        </select>
+    </div>
+    <button type="submit" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white py-3.5 rounded-xl font-bold shadow-lg transition">
+        Submit Request
+    </button>
+</form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="py-20 bg-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-cyan-600 font-bold uppercase text-xs tracking-widest bg-cyan-100 px-3 py-1 rounded-full">Testimonials & Ratings</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">What Our Customers Say</h2>
+                    <p class="text-slate-600 mt-2">Read genuine reviews from homeowners and businesses across Bangladesh who trust our expert services.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                    <!-- Overall Rating Card -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-200 text-center space-y-4">
+                        <div class="inline-flex p-3 bg-cyan-50 text-cyan-600 rounded-2xl text-2xl font-bold mb-1">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">BRIGHT STREET GENERAL MAINTENANCE AND CLEANING SERVICES - L.L.C</h3>
+                        <div class="flex justify-center text-amber-400 text-xl gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 font-semibold text-lg">263 Google reviews</p>
+                        <a href="https://maps.google.com/?q=Bright+Street+General+Maintenance+Abu+Dhabi" target="_blank" class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-medium px-6 py-3 rounded-xl transition shadow">
+                            Write a review
+                        </a>
+                    </div>
+
+                    <!-- Review Card 1 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-200 relative flex flex-col justify-between h-full">
+                        <div class="absolute top-6 right-6 text-xl text-blue-500">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-amber-800 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                                    M
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 flex items-center gap-1.5">
+                                        muath alrammal <i class="fa-solid fa-circle-check text-blue-500 text-xs"></i>
+                                    </h4>
+                                    <p class="text-xs text-slate-500">7 September 2026</p>
+                                </div>
+                            </div>
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-700 italic">"Ismail and Anwar were excellent and professional"</p>
+                        </div>
+                        <div class="pt-6 text-xs text-slate-400 font-medium border-t border-slate-100 mt-6">
+                            Verified Google Review
+                        </div>
+                    </div>
+
+                    <!-- Review Card 2 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-200 relative flex flex-col justify-between h-full">
+                        <div class="absolute top-6 right-6 text-xl text-blue-500">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold text-lg overflow-hidden">
+                                    <img src="https://placehold.co/100x100/ec4899/ffffff?text=SH" alt="Svitlana Hurina" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 flex items-center gap-1.5">
+                                        Svitlana Hurina <i class="fa-solid fa-circle-check text-blue-500 text-xs"></i>
+                                    </h4>
+                                    <p class="text-xs text-slate-500">3 September 2026</p>
+                                </div>
+                            </div>
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-700 italic">"Gigi is amazing lady and professional! I like how she is dedicated and focused. I appreciate and recommend Gigi 😊"</p>
+                        </div>
+                        <div class="pt-6 text-xs text-slate-400 font-medium border-t border-slate-100 mt-6">
+                            Verified Google Review
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white overflow-hidden border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <span class="text-cyan-600 font-bold uppercase text-xs tracking-widest bg-cyan-50 px-3 py-1 rounded-full">Mobile Booking</span>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                            Download the app.<br>Easily Manage Your Bookings.
+                        </h2>
+                        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                            Schedule and manage your appointments, check your professional profile and ratings, explore the latest offers, and so much more right from your phone.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <a href="#" class="inline-block hover:opacity-90 transition">
+                                <img src="https://placehold.co/180x55/000000/ffffff?text=Download+on+App+Store" alt="App Store" class="h-12 sm:h-14 rounded-xl shadow-md">
+                            </a>
+                            <a href="#" class="inline-block hover:opacity-90 transition">
+                                <img src="https://placehold.co/180x55/000000/ffffff?text=GET+IT+ON+Google+Play" alt="Google Play" class="h-12 sm:h-14 rounded-xl shadow-md">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative flex justify-center lg:justify-end">
+                        <div class="flex gap-4 items-center">
+                            <!-- Phone Mockup 1 -->
+                            <div class="w-56 sm:w-64 bg-slate-900 rounded-[2.5rem] p-3 shadow-2xl border-4 border-slate-800 -rotate-3 hover:rotate-0 transition duration-300">
+                                <div class="bg-white rounded-[2rem] overflow-hidden h-[450px] flex flex-col p-4 text-xs">
+                                    <div class="flex justify-between items-center text-slate-800 font-bold mb-4">
+                                        <span>9:41</span>
+                                        <div class="flex gap-1 text-[10px]">
+                                            <i class="fa-solid fa-signal"></i>
+                                            <i class="fa-solid fa-wifi"></i>
+                                            <i class="fa-solid fa-battery-full"></i>
+                                        </div>
+                                    </div>
+                                    <div class="bg-cyan-500 text-white p-4 rounded-2xl mb-4 text-center">
+                                        <h4 class="font-bold text-sm">Sign In</h4>
+                                        <p class="text-[10px] opacity-90">Let's get started immediately</p>
+                                    </div>
+                                    <div class="space-y-3">
+                                        <div class="border border-slate-200 rounded-lg p-2 text-slate-500">Email address</div>
+                                        <div class="border border-slate-200 rounded-lg p-2 text-slate-500">Password</div>
+                                        <div class="bg-amber-500 text-white text-center py-2 rounded-lg font-bold">Sign In</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Phone Mockup 2 -->
+                            <div class="w-60 sm:w-68 bg-slate-900 rounded-[2.5rem] p-3 shadow-2xl border-4 border-slate-800 translate-y-6 rotate-3 hover:rotate-0 transition duration-300 hidden sm:block">
+                                <div class="bg-white rounded-[2rem] overflow-hidden h-[480px] flex flex-col p-4 text-xs">
+                                    <div class="flex justify-between items-center text-slate-800 font-bold mb-4">
+                                        <span>9:41</span>
+                                        <div class="flex gap-1 text-[10px]">
+                                            <i class="fa-solid fa-signal"></i>
+                                            <i class="fa-solid fa-wifi"></i>
+                                            <i class="fa-solid fa-battery-full"></i>
+                                        </div>
+                                    </div>
+                                    <div class="bg-amber-500 text-slate-900 p-3 rounded-xl mb-3 flex justify-between items-center font-bold">
+                                        <span>Home Cleaning Service</span>
+                                        <span class="bg-white text-amber-600 px-2 py-0.5 rounded text-[10px]">20% OFF</span>
+                                    </div>
+                                    <div class="grid grid-cols-3 gap-2 text-center text-[10px] font-semibold text-slate-600 mb-4">
+                                        <div class="bg-slate-50 p-2 rounded-lg">Cleaning</div>
+                                        <div class="bg-slate-50 p-2 rounded-lg">Pest Control</div>
+                                        <div class="bg-slate-50 p-2 rounded-lg">Maintenance</div>
+                                    </div>
+                                    <div class="font-bold text-slate-900 mb-2">General Cleaning Packages</div>
+                                    <div class="bg-slate-100 h-28 rounded-xl flex items-center justify-center text-slate-400">
+                                        <i class="fa-solid fa-image text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="services" class="bg-[#0b0f19] text-white pt-16 pb-12 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-16 border-b border-slate-800">
+                <!-- Column 1: Brand & Info -->
+                <div class="space-y-6">
+                    <a href="#" class="inline-block">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white flex items-center">
+                            BRIGHT<span class="text-amber-500 ml-1">STREET</span>
+                            <i class="fa-solid fa-star text-amber-500 text-sm ml-1 -translate-y-2"></i>
+                        </span>
+                        <span class="text-[10px] uppercase tracking-widest text-slate-400 font-semibold block">General Maintenance & Cleaning Services LLC</span>
+                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        BRIGHT STREET GENERAL MAINTENANCE AND CLEANING SERVICES – L.L.C is your trusted partner for all cleaning, maintenance, and pest control needs.
+                    </p>
+                    <div>
+                        <h4 class="text-white font-bold text-sm mb-3">Connect with us</h4>
+                        <div class="flex items-center gap-3">
+                            <a href="#" class="w-10 h-10 rounded-lg bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-lg bg-pink-600 text-white flex items-center justify-center hover:bg-pink-700 transition"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-lg bg-slate-800 text-white flex items-center justify-center hover:bg-slate-700 transition border border-slate-700"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-lg bg-black text-white flex items-center justify-center hover:bg-slate-900 transition border border-slate-700"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://wa.me/971542179361" target="_blank" class="w-10 h-10 rounded-lg bg-emerald-600 text-white flex items-center justify-center hover:bg-emerald-700 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <div class="inline-block p-2 bg-white rounded-xl shadow">
+                            <img src="https://placehold.co/110x110/ffffff/000000?text=QR+Code" alt="QR Code" class="w-24 h-24 object-contain">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Our Services -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-white">Our Services</h3>
+                    <ul class="space-y-3 text-slate-300 font-medium">
+                        <li>
+                            <a href="tel:+8801580403769" class="flex items-center gap-2 hover:text-cyan-400 transition">
+                                <i class="fa-solid fa-angles-right text-xs text-cyan-400"></i> Deep Cleaning Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+8801580403769" class="flex items-center gap-2 hover:text-cyan-400 transition">
+                                <i class="fa-solid fa-angles-right text-xs text-cyan-400"></i> Home Cleaning Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+8801580403769" class="flex items-center gap-2 hover:text-cyan-400 transition">
+                                <i class="fa-solid fa-angles-right text-xs text-cyan-400"></i> Sofa Cleaning Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+8801580403769" class="flex items-center gap-2 hover:text-cyan-400 transition">
+                                <i class="fa-solid fa-angles-right text-xs text-cyan-400"></i> Pest Control
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="pt-4">
+                        <a href="tel:+8801580403769" class="inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold px-6 py-3 rounded-xl transition shadow">
+                            More Service
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 3: Get In Touch & Map -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-white">Get In Touch</h3>
+                    <ul class="space-y-4 text-slate-300 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-map-location-dot text-cyan-400 mt-1"></i>
+                            <span>Dhaka, Bangladesh</span>
+                        </li>
+                        <li>
+                            <a href="tel:+8801580403769" class="flex items-center gap-3 hover:text-cyan-400 transition">
+                                <i class="fa-solid fa-phone text-cyan-400"></i> +8801580403769
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@bsfm.ae" class="flex items-center gap-3 hover:text-cyan-400 transition">
+                                <i class="fa-solid fa-envelope text-cyan-400"></i> info@bsfm.ae
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="rounded-2xl overflow-hidden border border-slate-700 shadow-lg relative h-40 bg-slate-800">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-70" style="background-image: url('https://placehold.co/400x200/1e293b/38bdf8?text=Map+Location+Abu+Dhabi')"></div>
+                        <div class="absolute inset-0 bg-slate-900/40 flex flex-col justify-end p-4">
+                            <a href="https://maps.google.com/?q=Khalifa+Bin+Zayed+The+First+St+Al+Danah+Abu+Dhabi" target="_blank" class="bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs py-2 px-4 rounded-lg shadow inline-flex items-center justify-center gap-2">
+                                Open in Maps <i class="fa-solid fa-arrow-up-right-from-square text-cyan-600"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom & Back to Top -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <p>&copy; 2026 Bright Street General Maintenance & Cleaning Services LLC. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Back to Top Button -->
+        <button onclick="scrollToTop()" class="fixed bottom-6 right-6 z-50 bg-slate-900 hover:bg-slate-800 text-white w-12 h-12 rounded-xl shadow-xl flex items-center justify-center transition border border-slate-700">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+        <!-- Floating WhatsApp Widget -->
+        <a href="https://wa.me/971542179361" target="_blank" class="fixed bottom-6 left-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl transition transform hover:scale-110">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
